@@ -1,0 +1,19 @@
+//variables and Data Types
+//preprocessor directive -scanf(),printf()
+#include<stdio.h>
+int main (){
+      //declaration  and initialization 
+      char a = 'H'; //%s
+      char name [] = {"Lewin"};//%s
+      int age = 17;//%d
+      float salary = 2000.50;//%f
+      double budget = 1000;//%lf
+      
+      printf ("The character is \t %c\n",a);
+      printf("Your name is %s \n",name);
+      printf("Your age is %d\n", age);
+      printf("The salary is %.2f\n", salary);
+      printf("The budget is %.4lf\n",budget);
+      
+      return 'o';
+      }
