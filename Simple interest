@@ -1,0 +1,30 @@
+//program to find simple interest 
+/*
+program to find simple interest 
+Author lewin kibugu 
+reg no CT101/G/22563/24
+Date 24/9/2024
+*/
+//preprocessing directives scanf("");,printf("");
+#include <stdio.h>
+int main() {
+       //Declaration and initialization of variables
+       int age;
+       int annual_income;
+       
+       printf("enter the age");
+       scanf("%d",& age);
+       
+       printf("enter the annual_income");
+       scanf("%d",& annual_income);
+       
+       if(age<21,annual_income<21000)
+       printf("unfortunately we are unable to offer you a loan");
+       
+       if(age>21, annual_income>21000)
+       printf("congratulations you qualify for loan");
+       
+       return 0;
+       
+      }
+       
