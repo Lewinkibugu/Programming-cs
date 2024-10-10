@@ -1,0 +1,56 @@
+//electricity bill 
+/*
+Name lewin kibugu 
+reg CT101/G/22563/24
+date 5 oct 2024
+*/
+#include<stdio.h>
+int main(){
+     
+     int customer_ID;
+     char customer_name;
+     int unit_consumed;
+     float charges_per_unit;
+     float total_amount_to_pay;
+     
+     printf("enter customer_ID");
+     scanf("%d",& customer_ID);
+     
+     printf("enter customer_name");
+     scanf("%s",& customer_name);
+     
+     printf("enter unit_consumed");
+     scanf("%d",& unit_consumed);
+     
+     if(unit_consumed<200)
+      {
+       charges_per_unit = 1.20;
+       total_amount_to_pay = charges_per_unit*unit_consumed ;
+       printf("total_amount_to_pay=%f\n", total_amount_to_pay);
+      }
+      
+      if(unit_consumed>=200 && unit_consumed<=400)
+      {
+       charges_per_unit = 1.50;
+       total_amount_to_pay = charges_per_unit*unit_consumed;
+       printf("total_amount_to_pay=%f\n", total_amount_to_pay);
+      }
+      
+      if(unit_consumed>= 400 && unit_consumed<=600)
+      {
+       charges_per_unit=1.80;
+       total_amount_to_pay= charges_per_unit*unit_consumed;
+       printf("total_amount_to_pay=%f\n", total_amount_to_pay);
+      }
+      
+      if(unit_consumed>=600)
+      {
+       charges_per_unit=2.00;
+       total_amount_to_pay=charges_per_unit*unit_consumed;
+       printf("total_amount_to_pay=%f\n",total_amount_to_pay);
+      }
+      
+      printf("unit_cosumed%d", unit_consumed);
+      printf("charges_per_unit%f", charges_per_unit);
+      return 0;
+      }
