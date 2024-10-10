@@ -1,0 +1,25 @@
+// while loop
+/*
+name lewin kibugu 
+reg CT101/G/22563/24
+date 6/10/2024
+*/
+#include<stdio.h>
+int main(){
+   int i, start,stop,sum;
+   printf("enter when to start");
+   scanf("%d",&start);
+   
+   printf("enter when to stop");
+   scanf("%d", & stop);
+   
+   i=start;
+   while ( i<=stop){
+   printf("%d\n",i);
+   i++;
+   sum+=i;
+   }
+   printf("sum=%d", sum);
+   
+   return 0;
+   }
