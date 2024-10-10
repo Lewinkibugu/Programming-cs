@@ -1,0 +1,23 @@
+// for loop
+/*
+name lewin kibugu 
+reg CT101/G/22563/24
+date 6/10/2024
+*/
+#include<stdio.h>
+int main(){
+   int i, start,sum=0,stop;
+   printf("enter when to start");
+   scanf("%d",&start);
+   
+   printf("enter when to stop");
+   scanf("%d",&stop);
+   
+   for( i=start;i<=stop;i++){
+   printf("%d\n",i);
+   sum+=i;
+   }
+   printf("sum=%d",sum);
+   
+   return 0;
+   }
